@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upcoming Events · Troop 927</title>
+  <meta name="description" content="Current and upcoming events, meetings, campouts, and adventures for Troop 927 in Rock Hill, SC." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="Troop 927 crest" />
+        <span class="name">Troop 927<span class="sub">Scouting America · Rock Hill, SC</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#program">Program</a>
+        <a href="events.html">Calendar</a>
+        <a href="index.html#join" class="cta">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Upcoming Events</h1>
+        <p>Meetings, campouts, and adventures on the Troop 927 calendar.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="events-toolbar">
+          <span class="pill-note"><span class="dot"></span> Showing current &amp; upcoming events</span>
+          <button class="toggle-btn" id="togglePast" aria-pressed="false">Show past events</button>
+        </div>
+        <div id="events"></div>
+        <p style="margin-top:36px;color:var(--muted);font-size:.92rem">
+          Dates and details may change. For questions or the latest updates, ask a troop leader at our Monday meeting.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="cols">
+        <div style="max-width:34ch">
+          <h4>Troop 927</h4>
+          <p style="margin:0">A girl troop in Scouting America, based in Rock Hill, South Carolina. Building confidence, leadership, and lifelong friendships.</p>
+        </div>
+        <div>
+          <h4>Meetings</h4>
+          <p style="margin:0">Mondays · 6:30 PM<br />St. John's United Methodist Church<br />321 S. Oakland Ave, Rock Hill, SC</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p style="margin:0">
+            <a href="index.html">Home</a><br />
+            <a href="index.html#program">Program</a><br />
+            <a href="events.html">Calendar</a>
+          </p>
+        </div>
+      </div>
+      <div class="fine">
+        <span>&copy; <span id="year"></span> Troop 927 · troop927.org</span>
+        <span>Part of the Scouts 92x family · <a href="https://scouts92x.com">scouts92x.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

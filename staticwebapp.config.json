@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastorage.azurewebsites.net/schemas/staticwebapp.config.json",
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/css/*",
+      "/js/*",
+      "/assets/*",
+      "/*.{css,scss,js,png,gif,jpg,jpeg,svg,ico,webp,woff,woff2,ttf}"
+    ]
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
+  }
+}
