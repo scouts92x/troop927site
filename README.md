@@ -12,7 +12,7 @@ Served at **troop927.org** and linked from **scouts92x.com**.
 | `css/styles.css` | Shared styles. |
 | `js/main.js` | Navigation + footer year helper. |
 | `js/events.js` | Event data **and** the render logic that filters to upcoming events. |
-| `assets/logo.svg` | Troop crest / favicon. |
+| `assets/logo.png` | Troop crest / favicon (Scouting America emblem, transparent background). |
 | `staticwebapp.config.json` | Azure Static Web Apps routing config. |
 
 ## Updating the calendar

@@ -1,16 +1,16 @@
 :root {
-  --plum: #4a1f6b;
-  --plum-deep: #331149;
-  --violet: #7b3fa0;
+  --plum: #003c82;
+  --plum-deep: #002a5e;
+  --violet: #1663b0;
   --gold: #f4b942;
   --gold-deep: #d99a1c;
   --teal: #0f8a8a;
-  --ink: #241a2e;
-  --muted: #6b6377;
+  --ink: #16233a;
+  --muted: #5c6675;
   --paper: #ffffff;
-  --cloud: #f6f2fb;
-  --line: #e7def2;
-  --shadow: 0 10px 30px rgba(51, 17, 73, .12);
+  --cloud: #eef4fb;
+  --line: #d9e6f4;
+  --shadow: 0 10px 30px rgba(0, 42, 94, .14);
   --radius: 16px;
   --max: 1120px;
   font-synthesis: none;
@@ -62,7 +62,7 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   color: var(--ink);
 }
-.brand img { width: 44px; height: 44px; }
+.brand img { height: 42px; width: auto; }
 .brand .name { font-weight: 800; font-size: 1.15rem; line-height: 1.1; letter-spacing: .2px; }
 .brand .sub { display: block; font-weight: 600; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; }
 
@@ -206,7 +206,7 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow);
   transition: transform .15s ease, box-shadow .15s ease;
 }
-.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(51, 17, 73, .16); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(0, 42, 94, .18); }
 .card .ic {
   width: 54px; height: 54px;
   border-radius: 14px;
@@ -353,10 +353,10 @@ img { max-width: 100%; display: block; }
   border-radius: 14px;
   padding: 18px 20px;
   margin-bottom: 14px;
-  box-shadow: 0 4px 14px rgba(51, 17, 73, .06);
+  box-shadow: 0 4px 14px rgba(0, 42, 94, .07);
   transition: transform .12s ease, box-shadow .12s ease;
 }
-.event-row:hover { transform: translateX(3px); box-shadow: 0 10px 24px rgba(51, 17, 73, .12); }
+.event-row:hover { transform: translateX(3px); box-shadow: 0 10px 24px rgba(0, 42, 94, .14); }
 .event-row.today { border-left-color: var(--gold); background: linear-gradient(90deg, rgba(244,185,66,.1), var(--paper) 40%); }
 .event-row[data-cat="campout"] { border-left-color: var(--teal); }
 .event-row[data-cat="holiday"] { border-left-color: #c0447a; }

@@ -3,3 +3,6 @@ node_modules/
 Thumbs.db
 *.log
 .vscode/
+
+_serve.js
+preview_home.png
