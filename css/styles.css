@@ -63,8 +63,8 @@ img { max-width: 100%; display: block; }
   color: var(--ink);
 }
 .brand img { height: 42px; width: auto; }
-.brand .name { font-weight: 800; font-size: 1.15rem; line-height: 1.1; letter-spacing: .2px; }
-.brand .sub { display: block; font-weight: 600; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; }
+.brand .name { font-weight: 800; font-size: 1.15rem; line-height: 1.2; letter-spacing: .2px; }
+.brand .sub { display: block; margin-top: 4px; font-weight: 600; font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; }
 
 .nav {
   display: flex;
