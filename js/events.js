@@ -7,6 +7,8 @@
  *   title : short name
  *   desc  : optional detail line
  *   cat   : "meeting" | "campout" | "service" | "holiday" | "event"
+ *   link  : optional URL — renders a clickable link on the event
+ *   linkText : optional label for that link (defaults to "View trip site →")
  *
  * The page renders ONLY current and upcoming events (anything whose final day is
  * today or later), so it stays accurate on its own as the year rolls forward.
@@ -31,7 +33,7 @@ var TROOP_EVENTS = [
   { start: "2027-03-19", end: "2027-03-21", title: "Campout: New Scout", desc: "Bethelwoods.", cat: "campout" },
   { start: "2027-04-16", end: "2027-04-18", title: "Campout: Spring Camporee", desc: "Spring district camporee.", cat: "campout" },
   { start: "2027-05-07", end: "2027-05-09", title: "Campout: Kayaking", desc: "Spring kayaking adventure.", cat: "campout" },
-  { start: "2027-06-06", end: "2027-06-12", title: "High Adventure: Kayaking", desc: "New River Kayaking, The Summit, WV.", cat: "campout" },
+  { start: "2027-06-06", end: "2027-06-12", title: "High Adventure: Kayaking", desc: "New River Kayaking, The Summit, WV.", cat: "campout", link: "summit-kayak-adventure/", linkText: "Explore the Kayak Trek site \u2192" },
   { start: "2027-06-27", end: "2027-07-03", title: "Summer Camp: Justice Scout Camp", desc: "The Summit, WV.", cat: "campout" }
 ];
 
@@ -147,6 +149,14 @@ var TROOP_EVENTS = [
       tag.textContent = CAT_LABEL[e.cat] || "Event";
     }
     body.appendChild(tag);
+
+    if (e.link) {
+      var link = document.createElement("a");
+      link.className = "event-link";
+      link.href = e.link;
+      link.textContent = e.linkText || "View trip site \u2192";
+      body.appendChild(link);
+    }
 
     row.appendChild(badge);
     row.appendChild(body);
