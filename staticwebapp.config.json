@@ -6,6 +6,7 @@
       "/css/*",
       "/js/*",
       "/assets/*",
+      "/philmont-cavalcade/*",
       "/*.{css,scss,js,png,gif,jpg,jpeg,svg,ico,webp,woff,woff2,ttf}"
     ]
   },
