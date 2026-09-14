@@ -7,6 +7,7 @@
       "/js/*",
       "/assets/*",
       "/philmont-cavalcade/*",
+      "/summit-kayak-adventure/*",
       "/*.{css,scss,js,png,gif,jpg,jpeg,svg,ico,webp,woff,woff2,ttf}"
     ]
   },
