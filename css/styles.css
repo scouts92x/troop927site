@@ -417,9 +417,179 @@ img { max-width: 100%; display: block; }
 }
 .empty-state svg { width: 56px; height: 56px; color: var(--line); margin-bottom: 12px; }
 
+/* ---------- BBQ promo ---------- */
+.bbq-promo { padding-block: 56px 16px; background: linear-gradient(180deg, var(--cloud), #fff); }
+.bbq-ad {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 32px;
+  padding: 40px;
+  border-radius: 26px;
+  color: #fff;
+  background:
+    radial-gradient(700px 360px at 12% 110%, rgba(255, 106, 0, .45), transparent 60%),
+    radial-gradient(500px 300px at 95% -10%, rgba(244, 185, 66, .25), transparent 60%),
+    linear-gradient(150deg, #2a1a12 0%, #1a0f0a 100%);
+  box-shadow: 0 24px 60px rgba(26, 15, 10, .35);
+  border: 1px solid rgba(255, 140, 50, .35);
+}
+.bbq-main, .bbq-side { position: relative; z-index: 2; }
+.bbq-ribbon {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff6a00, #f4b942);
+  color: #1a0f0a;
+  font-weight: 800;
+  font-size: .8rem;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(255, 106, 0, .4);
+}
+.bbq-ad h2 {
+  font-size: clamp(2rem, 4.6vw, 3.2rem);
+  line-height: 1.05;
+  margin: 16px 0 12px;
+  font-weight: 900;
+  letter-spacing: -.5px;
+}
+.bbq-ad h2 span {
+  background: linear-gradient(90deg, #ffb347, #ff6a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bbq-lead { font-size: 1.1rem; color: rgba(255, 255, 255, .88); margin: 0 0 22px; max-width: 46ch; }
+.bbq-lead strong { color: #ffb347; }
+
+.bbq-deal { display: flex; gap: 22px; align-items: center; margin-bottom: 22px; flex-wrap: wrap; }
+.bbq-price {
+  display: grid;
+  place-items: center;
+  width: 118px; height: 118px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffb347, #ff6a00 70%);
+  color: #1a0f0a;
+  box-shadow: 0 0 0 6px rgba(255, 106, 0, .25), 0 12px 30px rgba(255, 106, 0, .45);
+  transform: rotate(-8deg);
+  flex: none;
+}
+.bbq-price .amt { font-size: 2.4rem; font-weight: 900; line-height: 1; margin-top: 14px; }
+.bbq-price .per { font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-top: -18px; }
+.bbq-deal ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.bbq-deal li::before { content: "✓"; color: #ffb347; font-weight: 900; margin-right: 8px; }
+
+.bbq-pickup {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: rgba(255, 255, 255, .07);
+  border: 1px dashed rgba(255, 179, 71, .55);
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, .9);
+}
+.pk-date {
+  flex: none;
+  width: 66px;
+  text-align: center;
+  background: #fff;
+  color: #1a0f0a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, .3);
+}
+.pk-date .m { display: block; background: #ff6a00; color: #fff; font-size: .72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; padding: 3px 0; }
+.pk-date .d { display: block; font-size: 1.7rem; font-weight: 900; line-height: 1.1; }
+.pk-date .w { display: block; font-size: .68rem; font-weight: 700; color: #7a6a60; padding-bottom: 4px; text-transform: uppercase; }
+.bbq-countdown { margin-top: 6px; font-weight: 800; color: #ffb347; font-size: .95rem; }
+
+.bbq-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-ember {
+  background: linear-gradient(90deg, #ff6a00, #ff9a1f);
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(255, 106, 0, .5);
+  animation: ember-pulse 2.4s ease-in-out infinite;
+}
+.btn-ember:hover { background: linear-gradient(90deg, #e55d00, #ff8a00); }
+@keyframes ember-pulse {
+  0%, 100% { box-shadow: 0 10px 26px rgba(255, 106, 0, .45), 0 0 0 0 rgba(255, 106, 0, .5); }
+  50% { box-shadow: 0 10px 26px rgba(255, 106, 0, .55), 0 0 0 10px rgba(255, 106, 0, 0); }
+}
+
+.bbq-side h3 { margin: 4px 0 14px; font-size: 1.25rem; color: #ffb347; }
+.bbq-steps { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 12px; }
+.bbq-steps li { display: flex; gap: 12px; align-items: flex-start; color: rgba(255, 255, 255, .82); font-size: .95rem; }
+.bbq-steps strong { display: block; color: #fff; font-size: 1rem; }
+.bbq-steps .n {
+  flex: none;
+  width: 30px; height: 30px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 106, 0, .2);
+  border: 1.5px solid #ff6a00;
+  color: #ffb347;
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+.bbq-credit {
+  background: #fff;
+  color: var(--ink);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .35);
+  transform: rotate(1deg);
+}
+.bc-head { font-weight: 900; font-size: 1.1rem; color: var(--plum); margin-bottom: 6px; }
+.bbq-credit p { margin: 0 0 12px; font-size: .94rem; color: var(--muted); }
+.bbq-credit p strong { color: var(--ink); }
+.bc-mock { background: var(--cloud); border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.bc-label { font-size: .78rem; font-weight: 800; color: var(--ink); margin-bottom: 6px; }
+.bc-select {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border: 2px solid var(--violet);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: var(--plum);
+  box-shadow: 0 0 0 4px rgba(22, 99, 176, .15);
+}
+.bc-select span { color: var(--muted); }
+.bbq-credit .bc-note { margin: 0; font-size: .86rem; }
+
+.bbq-smoke { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.bbq-smoke span {
+  position: absolute;
+  bottom: -60px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, .12), transparent 70%);
+  filter: blur(8px);
+  animation: smoke-rise 11s linear infinite;
+}
+.bbq-smoke span:nth-child(1) { left: 8%; }
+.bbq-smoke span:nth-child(2) { left: 38%; animation-delay: 3.5s; width: 140px; height: 140px; }
+.bbq-smoke span:nth-child(3) { left: 70%; animation-delay: 7s; }
+@keyframes smoke-rise {
+  0% { transform: translateY(0) scale(.7); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(-620px) scale(1.6); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-ember, .bbq-smoke span { animation: none; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .meeting { grid-template-columns: 1fr; }
+  .bbq-ad { grid-template-columns: 1fr; padding: 28px 22px; }
+  .bbq-credit { transform: none; }
 }
 @media (max-width: 720px) {
   .nav {
